@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticker API</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Merriweather+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <header id="jumbotron">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Stock Indices Search</h1>
+            </div>
+    </header>
+
+    <div id="container">
+        <div class="row">
+            <form>
+                <p>
+                    <label for="search">Enter a single stock symbol.</label>
+                    <input type="text" id="search" class="search" required>
+                </p>
+                <p>
+                    <label for="start-date">Enter a start date (format YYYYDDMM): </label>
+                    <input type="text" id="start-date" class="start-date" pattern="[0-9]{8}">
+                </p>
+                <p>
+                    <label for="end-date">Enter an end date (format YYYYDDMM): </label>
+                    <input type="text" id="end-date" class="end-date" pattern="[0-9]{8}">
+                </p>
+                <input class="btn btn-primary" type="submit" value="Submit">
+                <p>
+            </form>
+        </div>
+    </div>
+    <div class="results">
+        <ul></ul>
+    </div>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script> let myChart = document.getElementById('myChart').getContext('2d');
+    </script>
+    <script type="text/javascript" src="api.js"></script>
+</body>
+
+</html>

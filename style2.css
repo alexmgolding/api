@@ -1,0 +1,36 @@
+header {
+    background-image: url('https://images.pexels.com/photos/241544/pexels-photo-241544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 600px;
+    margin: 0px;
+}
+
+#jumbotron {
+    
+}
+.display-4 {
+    text-align: center;
+    padding-top: 30%;
+    color: orangered;
+    text-shadow: 1px 1px white;
+    font-family: 'Cinzel', serif;
+
+}
+
+    .jumbotron {
+        background-size: auto;
+        background-attachment: scroll;
+        background-position: center;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
